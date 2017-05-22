@@ -16,7 +16,7 @@ The current installation method for these packages is to pull them in using
 
     apk --no-cache add ca-certificates
     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-node-bower/master/sgerrand.rsa.pub
-    wget https://github.com/sgerrand/alpine-pkg-node-bower/releases/download/1.7.9-r0/node-bower-1.7.9-r0.apk
-    apk add node-bower-1.7.9-r0.apk
+    wget https://github.com/sgerrand/alpine-pkg-node-bower/releases/download/1.8.0-r0/node-bower-1.8.0-r0.apk
+    apk add node-bower-1.8.0-r0.apk
 
 [bower]: https://bower.io

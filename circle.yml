@@ -18,6 +18,7 @@ dependencies:
 test:
   override:
     - docker run -it -v $(pwd)/packages:/packages alpine:3.4 sh -c "cp /packages/sgerrand.rsa.pub /etc/apk/keys/ && apk -U add --no-progress --upgrade /packages/builder/x86_64/*.apk && bower search bower --allow-root"
+    - docker build -t $CIRCLE_PROJECT_REPONAME:$CIRCLE_SHA1 .
 
 deployment:
   release:

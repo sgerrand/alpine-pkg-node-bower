@@ -31,7 +31,7 @@ jobs:
       - run:
           name: Test executable
           command: |
-             bower help
+             bower help --allow-root
       - run:
           name: Remove Docker volumes
           command: |

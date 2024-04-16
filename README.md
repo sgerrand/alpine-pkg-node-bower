@@ -1,22 +1,13 @@
 # alpine-pkg-node-bower
 
-[![CircleCI](https://img.shields.io/circleci/project/sgerrand/alpine-pkg-node-bower/master.svg)](https://circleci.com/gh/sgerrand/alpine-pkg-node-bower)
+:warning: **Deprecated** :warning:
 
-This is [Bower][bower] as an Alpine Linux package.
+[As of 2021-09-01](https://github.com/alpinelinux/aports/commit/546d8503f77fb26cd07ae530c89a4c005d47ea93),
+the `bower` package can and should be downloaded and installed from Alpine Linux's community repository.
 
-## Releases
+---
 
-See the [releases page](https://github.com/sgerrand/alpine-pkg-node-bower/releases) for the latest
-download links.
+This was [Bower][bower] packaged for [Alpine Linux][alpine-linux].
 
-## Installing
-
-The current installation method for these packages is to pull them in using
-`wget` or `curl` and install the local file with `apk`:
-
-    apk --no-cache add ca-certificates wget
-    wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-node-bower/master/sgerrand.rsa.pub
-    wget https://github.com/sgerrand/alpine-pkg-node-bower/releases/download/1.8.0-r0/node-bower-1.8.2-r0.apk
-    apk add --no-cache node-bower-1.8.2-r0.apk
-
+[alpine-linux]: https://www.alpinelinux.org
 [bower]: https://bower.io
